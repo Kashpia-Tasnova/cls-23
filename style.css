@@ -1,0 +1,56 @@
+span{
+    color:red;
+}
+div p:nth-of-type(3n+0){
+    background-color: green;
+}
+div p:only-of-type{
+    background-color: yellow;
+}
+div p:only-child{
+    background-color: aquamarine;
+}
+input:optional{
+    background-color: green;
+    
+}
+input:required{
+    background-color: red;
+}
+input:read-only{
+    background-color: blue;
+}
+input:read-write{
+    background-color: brown;
+}
+.main div:target{
+    display:block;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+.main div{
+    display: block;
+}
+p::first-line{
+    color:green;
+}
+p::first-letter{
+    font-size: 30px;
+    color:red;
+}
+span::first-line{
+    color:red; /*first line element shudumatro block tag e kaj kre*/
+}
+p.un::first-letter{
+    font-weight: bold;
+    font-size:xx-large;
+    color:cadetblue;
+}   
+h2::before{
+    content:"Iam before";
+}
+h2::after{
+    content:"Iam after";
+    color:green; 
+}
